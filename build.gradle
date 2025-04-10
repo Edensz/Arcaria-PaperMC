@@ -1,0 +1,87 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+    id 'java'
+    id("io.papermc.paperweight.userdev") version "1.5.5"
+    id 'org.jetbrains.kotlin.jvm'
+}
+
+group = 'org.symphony'
+version = '1.0'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+
+    maven {
+        name = "papermc-repo"
+        url = "https://repo.papermc.io/repository/maven-public/"
+    }
+    maven {
+        name = "sonatype"
+        url = "https://oss.sonatype.org/content/groups/public/"
+    }
+
+    maven { url = "https://repo.aikar.co/content/groups/aikar/" }
+    maven { url = "https://hub.spigotmc.org/nexus/content/groups/public/" }
+}
+
+dependencies {
+    paperweight.paperDevBundle("1.20.1-R0.1-SNAPSHOT")
+
+    implementation("org.reflections:reflections:0.10.2")
+
+    implementation("net.kyori:adventure-api:4.14.0")
+    implementation("net.kyori:adventure-platform-bukkit:4.1.2")
+    implementation("net.kyori:adventure-text-serializer-legacy:4.11.0")
+
+    implementation("co.aikar:acf-paper:0.5.1-SNAPSHOT")
+    implementation("co.aikar:taskchain-bukkit:3.7.2")
+
+    compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Core:2.8.4")
+
+    compileOnly 'org.projectlombok:lombok:1.18.36'
+    annotationProcessor 'org.projectlombok:lombok:1.18.36'
+    testCompileOnly 'org.projectlombok:lombok:1.18.36'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.36'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+}
+
+def targetJavaVersion = 17
+java {
+    def javaVersion = JavaVersion.toVersion(targetJavaVersion)
+    if (JavaVersion.current() < javaVersion) {
+        toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
+    }
+}
+
+tasks.assemble {
+    dependsOn(tasks.reobfJar)
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+
+    if (targetJavaVersion >= 10 || JavaVersion.current().isJava10Compatible()) {
+        options.release.set(targetJavaVersion)
+    }
+}
+
+tasks.processResources {
+    def props = [version: version]
+    inputs.properties props
+    filteringCharset 'UTF-8'
+    filesMatching('paper-plugin.yml') {
+        expand props
+    }
+}
+
+tasks.reobfJar {
+    outputJar.set(layout.buildDirectory.file("libs/Cataclysm.jar"))
+}
+
+tasks.shadowJar {
+    relocate 'co.aikar.commands', 'org.symphony.acf'
+    relocate 'co.aikar.locales', 'org.symphony.locales'
+}
+
+build.dependsOn shadowJar

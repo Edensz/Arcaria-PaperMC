@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Cataclysm-PaperMC.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Cataclysm-PaperMC.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Cataclysm-PaperMC.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Cataclysm-PaperMC.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.symphony.Cataclysm-PaperMC.main.iml" filepath="$PROJECT_DIR$/.idea/modules/org.symphony.Cataclysm-PaperMC.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.symphony.Cataclysm-PaperMC.test.iml" filepath="$PROJECT_DIR$/.idea/modules/org.symphony.Cataclysm-PaperMC.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/paper-plugin-template-1.20.1.Cataclysm-PaperMC.main.iml" filepath="$PROJECT_DIR$/.idea/modules/paper-plugin-template-1.20.1.Cataclysm-PaperMC.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/paper-plugin-template-1.20.1.Cataclysm-PaperMC.test.iml" filepath="$PROJECT_DIR$/.idea/modules/paper-plugin-template-1.20.1.Cataclysm-PaperMC.test.iml" />
+    </modules>
+  </component>
+</project>
