@@ -1,4 +1,4 @@
-package org.example.project.api.data.json;
+package org.symphony.arcaria.api.data.json;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

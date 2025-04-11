@@ -1,4 +1,4 @@
-package org.example.project.api;
+package org.symphony.arcaria.api;
 
 import co.aikar.commands.BaseCommand;
 import co.aikar.commands.PaperCommandManager;

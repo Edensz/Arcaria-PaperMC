@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Arcaria-PaperMC.Cataclysm-PaperMC.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Arcaria-PaperMC.Cataclysm-PaperMC.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Arcaria-PaperMC.Cataclysm-PaperMC.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Arcaria-PaperMC.Cataclysm-PaperMC.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Cataclysm-PaperMC.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Cataclysm-PaperMC.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Cataclysm-PaperMC.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Cataclysm-PaperMC.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.symphony.Cataclysm-PaperMC.main.iml" filepath="$PROJECT_DIR$/.idea/modules/org.symphony.Cataclysm-PaperMC.main.iml" />

@@ -1,4 +1,4 @@
-package org.example.project.api.text;
+package org.symphony.arcaria.api.text;
 
 import org.jetbrains.annotations.NotNull;
 

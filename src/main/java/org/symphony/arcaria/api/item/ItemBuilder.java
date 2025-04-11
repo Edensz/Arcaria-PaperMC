@@ -1,12 +1,12 @@
-package org.example.project.api.item;
+package org.symphony.arcaria.api.item;
 
 import net.kyori.adventure.text.minimessage.MiniMessage;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataType;
-import org.example.project.api.data.PersistentData;
-import org.example.project.api.item.interfaces.ItemMaker;
+import org.symphony.arcaria.api.data.PersistentData;
+import org.symphony.arcaria.api.item.interfaces.ItemMaker;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

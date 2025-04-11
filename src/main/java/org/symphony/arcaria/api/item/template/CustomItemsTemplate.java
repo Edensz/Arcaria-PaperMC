@@ -1,8 +1,8 @@
-package org.example.project.api.item.template;
+package org.symphony.arcaria.api.item.template;
 
 import org.bukkit.Material;
-import org.example.project.api.item.ItemBuilder;
-import org.example.project.api.item.interfaces.ItemMaker;
+import org.symphony.arcaria.api.item.ItemBuilder;
+import org.symphony.arcaria.api.item.interfaces.ItemMaker;
 
 public enum CustomItemsTemplate implements ItemMaker {
 

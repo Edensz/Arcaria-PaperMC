@@ -1,6 +1,6 @@
-package org.example.project.api.data.json.interfaces;
+package org.symphony.arcaria.api.data.json.interfaces;
 
-import org.example.project.api.data.json.JsonConfig;
+import org.symphony.arcaria.api.data.json.JsonConfig;
 
 /**
  * Interface designed to define the necessary methods for classes that store data using Json files.

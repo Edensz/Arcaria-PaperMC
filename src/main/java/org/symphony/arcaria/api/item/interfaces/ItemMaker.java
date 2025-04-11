@@ -1,4 +1,4 @@
-package org.example.project.api.item.interfaces;
+package org.symphony.arcaria.api.item.interfaces;
 
 public interface ItemMaker {
     String name();

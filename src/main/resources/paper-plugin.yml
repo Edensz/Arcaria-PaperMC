@@ -1,6 +1,6 @@
 name: Cataclysm
 version: '1.0'
-main: org.example.project.Project
+main: org.symphony.arcaria.Arcaria
 api-version: '1.20'
 authors: [Edened]
 description: Extreme Hardcore Experience

@@ -1,4 +1,4 @@
-package org.example.project.api.text.font;
+package org.symphony.arcaria.api.text.font;
 
 import org.jetbrains.annotations.NotNull;
 

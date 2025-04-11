@@ -1,4 +1,4 @@
-package org.example.project.api.data;
+package org.symphony.arcaria.api.data;
 
 import org.bukkit.NamespacedKey;
 import org.bukkit.persistence.PersistentDataContainer;
@@ -7,7 +7,7 @@ import org.bukkit.persistence.PersistentDataType;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.example.project.Project;
+import org.symphony.arcaria.Arcaria;
 
 import java.util.Objects;
 
@@ -36,7 +36,7 @@ public class PersistentData {
     @NotNull
     @Contract("_ -> new")
     public static NamespacedKey key(String string) {
-        return new NamespacedKey(Project.getInstance(), string);
+        return new NamespacedKey(Arcaria.getInstance(), string);
     }
 
     @NotNull
